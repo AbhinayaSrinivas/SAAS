@@ -1,0 +1,106 @@
+.App {
+  top: 10px;
+  margin: 0;
+  display: flex;
+  position: relative;
+}
+
+.sidebar {
+  width: 20vw;
+  height: 100%;
+  align-items: center;
+  position: fixed;
+  background-color: #fdfdfd;
+  margin-left: 1vw;
+  padding-top: 20px; /* Adds gap between "Choose Files" button and image */
+}
+
+.middle {
+  top: 10px;
+  padding: 10px 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adds space below "Choose Files" button */
+}
+
+.frontpage {
+  width: 60vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centers content vertically */
+  align-items: center;  /* Centers content horizontally */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  top: 30px;
+  margin-left: 22vw;
+  padding: 20px; /* Adds internal spacing */
+}
+
+.inputs{
+  position: absolute;
+  top: 10px;  /* Move buttons to the top */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  background-color: white; /* Optional: Add background to avoid overlap */
+  z-index: 10; /* Ensure it stays above other elements */
+}
+p.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center; /* Centers text inside frontpage */
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 10px; /* Moves arrows to bottom */
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px; /* Adds spacing between arrows */
+}
+
+.image-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  cursor : pointer;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;  /* Moves delete button to top-right */
+  right: 5px;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px;
+  font-size: 14px;
+  border-radius: 50%;
+}
+
+.Round{
+  cursor: pointer;
+}
