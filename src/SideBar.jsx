@@ -17,21 +17,16 @@ const VisuallyHiddenInput = styled('input')({
     width: 1,
   });
 
-function SideBar() {
-    return(
+  function SideBar({ images, onImageSelect, onImageUpload }) {
+    return (
       <div className="sidebar">
-          {/* <div className="middle">
-             <Button component="label" role={undefined} variant="contained" tabIndex={-1}> Choose files
-               <VisuallyHiddenInput type="file" multiple/>
-             </Button>  &nbsp;&nbsp;
-             <LoopIcon fontSize='large' color='white' className="Round"/>
-          </div> */}
-
-          <div>
-            <ImageGallery/>
-          </div>
+        <ImageGallery
+          images={images}
+          onImageSelect={onImageSelect}
+          onImageUpload={onImageUpload}
+        />
       </div>
     );
-}
+  }
 
 export default SideBar;

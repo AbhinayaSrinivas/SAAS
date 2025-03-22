@@ -104,3 +104,76 @@ p.text {
 .Round{
   cursor: pointer;
 }
+
+/* Style for the Select button */
+.select-btn {
+  position: absolute;
+  bottom: 5px; /* Position at the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.select-btn:hover {
+  background-color: #0056b3;
+}
+
+.image-container {
+  position: relative;
+}
+
+.preview-image {
+  max-width: 80%; /* Restrict the maximum width */
+  max-height: 70vh; /* Restrict the maximum height */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within the container */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.arrow-container {
+  justify-content: center;
+  display: flex;
+  gap: 20px; /* Add space between arrows */
+}
+
+/* Arrows */
+.arrow {
+  cursor: pointer;
+  font-size: 24px; /* Adjust arrow size */
+  color: #007bff; /* Arrow color */
+}
+
+.arrow:hover {
+  color: #0056b3; /* Hover color */
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column; /* Stack sidebar and frontpage vertically */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+  }
+
+  .frontpage {
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+  }
+
+  .preview-image {
+    max-width: 90%; /* Increase width for smaller screens */
+    max-height: 50vh; /* Reduce height for smaller screens */
+  }
+}
